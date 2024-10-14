@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odi | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-800">   
+    <!-- Nav barre  -->
+    <nav class="flex flex-wrap items-center justify-between p-4">
+        <a href="#" class="sm:px-[75px] px-0 text-white font-bold text-xl hover:text-cyan-400">Odi's Portfolio.</a>
+        <div class="relative ml-auto text-white text-lg">
+            <div class="hidden md:flex">
+                <a href="#" class="mx-7 hover:text-cyan-400">Home</a>
+                <a href="#propos" class="mx-7 hover:text-cyan-400">À propos</a>
+                <a href="#services" class="mx-7 hover:text-cyan-400">Services</a>
+                <a href="#contact" class="mx-7 hover:text-cyan-400">Contact</a>
+            </div>
+            <button class="sm:hidden text-white" id="menu-toggle">
+                <!-- Icône (hamburger) pour le menu  -->
+                &#9776;
+            </button>
+            <div class="absolute right-0 w-48 bg-gray-900 rounded-md shadow-lg hidden" id="menu">
+                <a href="#" class="block px-4 py-2 hover:text-cyan-400">Home</a>
+                <a href="#propos" class="block px-4 py-2 hover:text-cyan-400">A propos</a>
+                <a href="#services" class="block px-4 py-2 hover:text-cyan-400">Services</a>
+                <a href="#contact" class="block px-4 py-2 hover:text-cyan-400">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-slate-800 py-5 transition-all mb-10" id="content-section">
+        <!-- Responsive et position de l'image au centre  -->
+        <div class="mt-0 relative container mx-auto text-white text-lg flex flex-wrap items-center w-full max-w-7xl sm:mt-[150px] ">
+            <div class="md:w-1/2 md:pr-5 mt-7"> 
+                <p class="font-bold text-3xl text-cyan-400 mb-8 ml-6"> Qui suis-je? </p> 
+                <p class="px-7 flex-wrap">
+                     Hello je suis , <span class="font-bold text-2xl"> N'dja odi </span>
+                    <strong>Etudiant en 3ième année de licence à L'ESATIC ( École Supérieure 
+                        Africaine dans le domaine des TICs)
+                    J'aime la programmation et j'aspire a monté ma propre 
+                    entreprise dans le domaine .
+                    </strong></p>
+                <div class="flex mt-5 ml-4">
+                    <a href="https://instagram.com"><img src="instagram.png" alt="" class="rounded-full w-9 hover:bg-blue-700 mx-1"></a>
+                    <a href="https://facebook.com"><img src="facebook.png" alt="" class="rounded-full w-9  hover:bg-blue-700 mx-1"></a>
+                    <a href="https://x.com/"><img src="twitter.png" alt="" class="rounded-full w-9  hover:bg-blue-700 mx-1"></a>
+                </div>
+            </div>
+            <!-- Première image  -->
+            <img src="images.png" alt="mon image" class="w-full md:w-1/2 h-auto object-cover mt-3">
+        </div>
+    </section>
+
+<section class="bg-gray-700 pb-12 pt-5 mt-[50px] mb-10">
+    <div class="mt-0 relative container mx-auto text-white text-lg flex flex-wrap items-center w-full max-w-7xl sm:mt-[50px]">
+                <!-- Deuxième image -->
+            <img src="images.png" alt="mon image" class="w-full md:w-1/2 h-auto object-cover mt-3">
+                <!-- Bloc de face de la deuxième image -->
+            <div class="md:w-1/2 md:pl-5 mt-7">
+                <p class="font-bold text-3xl text-cyan-400 mb-8 ml-6" id="propos"> À propos de moi </p> 
+                <p class="px-7 flex-wrap">
+                        <strong>Full Stack developper and mobile developper <br> L'ESATIC ( École Supérieure 
+                            Africaine dans le domaine des TICs)
+                        J'aime la programmation et j'aspire a monté ma propre 
+                        entreprise dans le domaine .
+                        </strong>
+                </p>
+                <!-- Le boutton : Read more  -->
+                <div class="justify-start flex sm:mb-5 px-5 mb-3">
+                    <a class="mt-5 text-white ring ring-cyan-400
+                    items-center py-2 px-4 rounded-lg hover:bg-cyan-700 hover:font-bold" 
+                    href="">
+                        read more  
+                    </a>
+                </div>
+            </div>
+    </div>
+</section>  
+
+  <!-- Mes serives  -->
+<h1 class="text-cyan-400 text-center text-3xl py-5 font-bold mt-[100px]" id="services"> Mes Services </h1>
+
+<!-- Mes cards des projets -->
+<section class="max-w-7xl mx-auto px-4 mt-5 mb-10">
+    <div class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        
+        <a href="" class="flex items-center justify-center font-semibold text-sm rounded-lg text-white">
+            <div class="shadow-lg px-2 py-[80px] text-center bg-gray-700 rounded relative group w-72"> 
+                <img src="code.png" class="mx-auto object-cover md:h-full w-12">
+                <h4 class="py-3 text-sm font-bold">developpement Web </h4>
+                <p class="mt-1 font-semibold text-center">Voir mes projets realiser en web </p>
+                <!-- Texte supplémentaire qui sera affiché au survol -->
+                <p class="absolute inset-0 flex items-center justify-center text-white bg-cyan-400 font-bold text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-5 text-lg">
+                    Application d'E-commerce réaliser laravel 10 et tailwindcss
+                </p>
+            </div> 
+        </a>
+        <a href="" class="flex items-center justify-center font-semibold text-sm rounded-lg text-white">
+            <div class="shadow-lg px-2 py-[80px] text-center bg-gray-700 rounded relative group w-72"> 
+                <img src="conception.png" class="mx-auto object-cover md:h-full w-12">
+                <h4 class="py-3 text-sm font-bold">UI/UX Design</h4>
+                <p class="mt-1 font-semibold text-center">Voir mes projets Design </p>
+                <!-- Texte supplémentaire qui sera affiché au survol -->
+                <p class="absolute inset-0 flex items-center justify-center text-white bg-cyan-400 font-bold text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-5 text-lg">
+                    Maquette d'application web et mobile fait avec Figma/Xd  
+                </p>
+            </div> 
+        </a>
+
+        <a href="" class="flex items-center justify-center font-semibold text-sm rounded-lg text-white">
+            <div class="shadow-lg px-2 py-[80px] text-center bg-gray-700 rounded relative group w-72"> 
+                <img src="mobile.png" class="mx-auto object-cover md:h-full w-12">
+                <h4 class="py-3 text-sm font-bold">Dev mobile</h4>
+                <p class="mt-1 font-semibold text-center">Voir mes projets realiser en mobile </p>
+                <!-- Texte supplémentaire qui sera affiché au survol -->
+                <p class="absolute inset-0 flex items-center justify-center text-white bg-cyan-400 font-bold text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-5 text-lg">
+                    Application mobile d'instruction chrétienne réaliser avec flutter  
+                </p>
+            </div> 
+        </a>
+        
+    </div>
+        
+</section>
+
+<h1 class="text-center text-cyan-400 text-3xl mt-[100px]" id="contact"> Contactez-moi </h1>
+<div class="flex flex-col items-center justify-center">
+    <div class="w-full max-w-4xl py-5">
+        <section class="px-14 mb-10">
+            <form action="" method="post">
+
+                <div class="flex space-x-5">
+                    <input type="email" name="email" id="email" class="w-1/2 h-[70px] mt-2 rounded bg-gray-700 pl-3" placeholder="Nom complet" required>
+                    <input type="email" name="email" id="email" class="w-1/2 h-[70px] mt-2 rounded bg-gray-700 pl-3" placeholder="Adresse e-mail" required>
+                </div>
+
+                <div class="flex space-x-5">
+                    <input type="email" name="email" id="email" class="w-1/2 h-[70px] mt-2 rounded bg-gray-700 pl-3" placeholder=" Mobile Number " required>
+                    <input type="email" name="email" id="email" class="w-1/2 h-[70px] mt-2 rounded bg-gray-700 pl-3" placeholder=" example@gmail.com " required>
+                </div>
+
+                <div>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Votre Message" class="w-full mt-4 bg-gray-700 pl-3"></textarea>
+                </div>
+
+                <div class="flex justify-center w-full mt-4">
+                    <button type="submit" class="bg-cyan-700 text-white justify-center items-center mx-auto py-3 px-[5px] rounded-md">
+                        Envoyer
+                    </button>
+                </div>
+               
+            </form>
+        </section>
+    </div>
+</div>
+
+<div class="flex justify-end mb-3 px-8">
+    
+</div>
+
+<footer class="flex justify-between bg-gray-700 py-4 px-8">
+    
+    <span class="text-xl font-[mono]">&copy;copyrigth 2024  par @Odi_ivan</span> 
+    <a href="" id="home"><img src="haut.png" alt="" class="w-8"></a> 
+</footer>
+
+
+
+   <script src="main.js"></script>
+</body>
+</html>
