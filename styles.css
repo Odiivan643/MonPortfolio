@@ -1,0 +1,4 @@
+/* Optionnel : pour une transition plus fluide */
+.transition-height {
+    transition: height 0.3s ease;
+}
